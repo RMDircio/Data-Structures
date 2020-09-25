@@ -82,7 +82,7 @@ class DoublyLinkedList(ListNode):
     """
     def delete(self, node):
          # is the list empty? nothing in head or tail
-        if not self.head and not self.tail:
+        if self.head is None and self.tail is None:
             # return nothing
             return
 
